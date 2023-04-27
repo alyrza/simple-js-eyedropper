@@ -1,17 +1,18 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.conteiner{
+.conteiner {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,30 +20,29 @@ body{
   gap: 1rem;
 }
 
-#btn-start{
+#btn-start {
   padding: 3rem;
   cursor: pointer;
   border: 0;
   border-radius: 50%;
-  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   color: #fff;
   background: #4141ff;
+  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-#btn-start:hover{
+#btn-start:hover {
   background: #5858ff;
   border-radius: 50%;
 }
 
-#btn-start i{
+#btn-start i {
   font-size: 5rem;
 }
 
-#color-code{
+#color-code {
   padding: 0.8rem 1.2rem;
   font-size: 1.7rem;
   background: #ffffff;
   color: #000;
   border-radius: 8px;
 }
-
