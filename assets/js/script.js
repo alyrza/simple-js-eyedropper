@@ -19,3 +19,21 @@ btnStart.addEventListener("click", () => {
       colorCode.textContent = e;
     });
 });
+
+colorCode.addEventListener("click", () => {
+  if (colorCode.textContent) {
+    navigator.clipboard
+      .writeText(colorCode.textContent)
+      .then(() => {
+        // success
+        let temp = colorCode.textContent;
+        colorCode.textContent = "copied!";
+        setTimeout(() => {
+          colorCode.textContent = temp;
+        }, 1000);
+      })
+      .catch((e) => {
+        //error
+      });
+  }
+});
